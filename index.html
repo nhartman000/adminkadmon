@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AdminKadmon — NYCH &amp; MG8</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #0B0B0C; }
+  a { color: #C9935A; text-decoration: none; border-bottom: 1px solid rgba(201,147,90,0.35); }
+  a:hover { color: #E2AC78; border-bottom-color: rgba(226,172,120,0.6); }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  .ak-marquee-track {
+    animation: marquee 22s linear infinite;
+  }
+  .ak-marquee-track:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes fileIn {
+    0%   { opacity: 0.35; transform: translateY(-10px); }
+    50%  { opacity: 1;    transform: translateY(6px); }
+    100% { opacity: 0.35; transform: translateY(-10px); }
+  }
+  .ak-chip-1 { animation: fileIn 3.2s ease-in-out infinite; animation-delay: 0s; }
+  .ak-chip-2 { animation: fileIn 3.2s ease-in-out infinite; animation-delay: 0.5s; }
+  .ak-chip-3 { animation: fileIn 3.2s ease-in-out infinite; animation-delay: 1s; }
+  .ak-chip-4 { animation: fileIn 3.2s ease-in-out infinite; animation-delay: 1.5s; }
+
+  @keyframes pulseBox {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(201,147,90,0.0); }
+    50%      { box-shadow: 0 0 0 10px rgba(201,147,90,0.06); }
+  }
+  .ak-mg8box { animation: pulseBox 3.2s ease-in-out infinite; }
+
+  .ak-word-btn { background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; }
+  .ak-word-btn:focus-visible { outline: 2px solid #C9935A; outline-offset: 4px; }
+</style>
+</head>
+<body>
+
+<div style="min-height: 100vh; width: 100%; box-sizing: border-box; background: #0B0B0C; color: #EDEAE3; font-family: 'Source Sans 3', sans-serif;">
+
+  <!-- HERO -->
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 96px 32px 64px;">
+    <div style="max-width: 720px; width: 100%; display: flex; flex-direction: column; gap: 24px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.12em; color: #8A8680; text-transform: uppercase;">
+        adminkadmon.net
+      </div>
+      <h1 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 60px; line-height: 1.05; color: #C9935A;">
+        AdminKadmon
+      </h1>
+      <div style="font-family: 'Fraunces', serif; font-style: italic; font-weight: 400; font-size: 21px; line-height: 1.4; color: #C7C3BB;">
+        The primordial administrator — where the NYCH protocol and the MG8 container family start.
+      </div>
+      <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #B8B4AC;">
+        Two pieces, built together: NYCH, a symbolic language that compresses natural language into
+        deterministic emoji anchors; and MG8, a bounded execution/container family that runs, states,
+        gates and traces whatever NYCH hands it. Both are early, working, and open.
+      </p>
+    </div>
+  </div>
+
+  <!-- NYCH SECTION -->
+  <div style="display: flex; justify-content: center; padding: 48px 32px; border-top: 1px solid rgba(237,234,227,0.1);">
+    <div style="max-width: 720px; width: 100%; display: flex; flex-direction: column; gap: 20px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #8A8680; text-transform: uppercase;">01 — NYCH</div>
+      <h2 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 32px; color: #EDEAE3;">A dynamic gestalt symbolic language</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #B8B4AC;">
+        NYCH maps words onto a small, versioned table of fixed semantic-anchor emoji. Anything not yet
+        in the table falls back to a mechanical <strong style="color: #EDEAE3;">consonant skeleton</strong> —
+        the word with its vowels and doubled letters dropped — so meaning is never guessed at, only
+        either matched or openly left uncompressed. Names, drug names, and scientific terms are
+        explicitly passed through untouched; NYCH never symbolizes a protected term.
+      </p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #B8B4AC;">
+        A reproducible internal run took a 37-character instruction through the full expansion pipeline
+        into roughly 4,200 characters of unpacked context for the receiving model. That ratio is real and
+        rerunnable. What it's actually worth to an LLM's answer quality — compared to just sending the
+        plain instruction — has not been independently measured. That comparison is the first thing this
+        needs from people who aren't the one who built it.
+      </p>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE INTERLINEAR DEMO -->
+  <div style="display: flex; justify-content: center; padding: 40px 32px 64px; border-top: 1px solid rgba(237,234,227,0.1);">
+    <div style="max-width: 760px; width: 100%; display: flex; flex-direction: column; gap: 20px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #8A8680; text-transform: uppercase;">live example</div>
+      <h3 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 24px; color: #EDEAE3;">
+        "Hammer the nail into the wood foundation"
+      </h3>
+      <p style="margin: 0; font-size: 14px; color: #85817A;">
+        Click a word.
+      </p>
+
+      <div style="overflow: hidden; width: 100%; padding: 12px 0;">
+        <div id="ak-marquee-track" class="ak-marquee-track" style="display: flex; width: max-content;"></div>
+      </div>
+
+      <div style="background: rgba(237,234,227,0.04); border: 1px solid rgba(237,234,227,0.1); border-radius: 10px; padding: 20px 24px; min-height: 64px; display: flex; flex-direction: column; gap: 6px;">
+        <div id="ak-selected-word" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #C9935A;"></div>
+        <div id="ak-selected-info" style="font-size: 15px; line-height: 1.6; color: #B8B4AC;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILES INTO .mg8 -->
+  <div style="display: flex; justify-content: center; padding: 56px 32px; border-top: 1px solid rgba(237,234,227,0.1); background: rgba(237,234,227,0.02);">
+    <div style="max-width: 760px; width: 100%; display: flex; flex-direction: column; gap: 32px; align-items: center;">
+      <div style="text-align: center; display: flex; flex-direction: column; gap: 10px;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #8A8680; text-transform: uppercase;">02 — MG8</div>
+        <h2 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 32px; color: #EDEAE3;">Where a run actually lives</h2>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 18px;">
+        <div class="ak-chip-1" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #EDEAE3; background: rgba(201,147,90,0.1); border: 1px solid rgba(201,147,90,0.3); border-radius: 8px; padding: 10px 16px;">.gst<div style="color:#85817A; font-size: 11px; margin-top: 4px;">gestalt: symbols + invariants</div></div>
+        <div class="ak-chip-2" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #EDEAE3; background: rgba(201,147,90,0.1); border: 1px solid rgba(201,147,90,0.3); border-radius: 8px; padding: 10px 16px;">.g8son<div style="color:#85817A; font-size: 11px; margin-top: 4px;">gated schema, 1–3 gates</div></div>
+        <div class="ak-chip-3" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #EDEAE3; background: rgba(201,147,90,0.1); border: 1px solid rgba(201,147,90,0.3); border-radius: 8px; padding: 10px 16px;">.ork<div style="color:#85817A; font-size: 11px; margin-top: 4px;">position + loop bound</div></div>
+        <div class="ak-chip-4" style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #EDEAE3; background: rgba(201,147,90,0.1); border: 1px solid rgba(201,147,90,0.3); border-radius: 8px; padding: 10px 16px;">.qson<div style="color:#85817A; font-size: 11px; margin-top: 4px;">queriable trace schema</div></div>
+      </div>
+
+      <div style="font-size: 22px; color: #85817A;">↓</div>
+
+      <div class="ak-mg8box" style="font-family: 'JetBrains Mono', monospace; font-size: 16px; color: #C9935A; background: rgba(201,147,90,0.08); border: 1px solid rgba(201,147,90,0.5); border-radius: 12px; padding: 18px 36px; text-align: center;">
+        .mg8
+        <div style="font-family: 'Source Sans 3', sans-serif; color: #B8B4AC; font-size: 13px; margin-top: 4px;">macro-gate structured ordered notation schema</div>
+      </div>
+
+      <p style="margin: 0; max-width: 560px; text-align: center; font-size: 14px; line-height: 1.7; color: #85817A;">
+        Each identity stays separate on purpose — state, gate, position, and trace never collapse into
+        one blob. A `.mg8pk` package can bundle several `.mg8` units the same way.
+      </p>
+    </div>
+  </div>
+
+  <!-- FILE FAMILY TABLE -->
+  <div style="display: flex; justify-content: center; padding: 56px 32px; border-top: 1px solid rgba(237,234,227,0.1);">
+    <div style="max-width: 760px; width: 100%; display: flex; flex-direction: column; gap: 20px;">
+      <h3 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 24px; color: #EDEAE3;">The file family, plainly</h3>
+
+      <div id="ak-file-family" style="display: flex; flex-direction: column; gap: 1px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(237,234,227,0.1);"></div>
+    </div>
+  </div>
+
+  <!-- STATE REPRESENTATION / TCTA -->
+  <div style="display: flex; justify-content: center; padding: 56px 32px; border-top: 1px solid rgba(237,234,227,0.1);">
+    <div style="max-width: 720px; width: 100%; display: flex; flex-direction: column; gap: 20px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #8A8680; text-transform: uppercase;">03 — state &amp; trajectory</div>
+      <h2 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 32px; color: #EDEAE3;">The computational primitive underneath all of it</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #B8B4AC;">
+        Every <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">.g8son</code> gate operates over the same
+        primitive: a state representation <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">SR = (s, D, C)</code>
+        — a state <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">s</code>, the domain
+        <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">D</code> it's read in, and the constraints
+        <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">C</code> active on it. Chain
+        <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">.mg8.g8son + g8son + g8son …</code> across one run
+        and, formally, that chain is a trajectory — a sequence of transforms, each one carrying a state
+        representation to the next.
+      </p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #B8B4AC;">
+        Trajectory-Constrained Transform Algebra (TCTA — a separate, proprietary framework of the author's)
+        defines an admissible space: the set of trajectories a given set of constraints actually permits.
+        The overarching intent for MG8 is to map a gate chain against that admissible space, so a run is
+        constrained toward a declared goal or target transform — not just whatever sequence of gates
+        happened to fire. <strong style="color: #EDEAE3;">That coupling is the architectural target, not
+        working code yet</strong> — same honesty bar as everything else on this page: it's the direction,
+        not a claim of what's built.
+      </p>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #B8B4AC;">
+        This doesn't depend on NYCH. NYCH's emoji/skeleton layer is one choice of representation for the
+        <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">s</code> in
+        <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">SR = (s, D, C)</code> — a
+        compressed one. Swap it out and the same gate-chain-as-trajectory structure still holds, across
+        whatever application runs it. Concretely: MG8 works standalone, with no NYCH symbolization at all,
+        as deterministic natural-language gates in front of an LLM — plain-language conditions an output
+        has to satisfy to pass, explicit bounds, and a fail-closed <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">UNRESOLVED</code>
+        exit instead of a silent infinite retry. NYCH is one thing you can run through that pipeline, not a
+        requirement of it.
+      </p>
+    </div>
+  </div>
+
+  <!-- ADOPTION -->
+  <div style="display: flex; justify-content: center; padding: 56px 32px; border-top: 1px solid rgba(237,234,227,0.1); background: rgba(237,234,227,0.02);">
+    <div style="max-width: 720px; width: 100%; display: flex; flex-direction: column; gap: 20px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #8A8680; text-transform: uppercase;">04 — adopt it</div>
+      <h2 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 32px; color: #EDEAE3;">This needs outside eyes, not more spec</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #B8B4AC;">
+        Everything above is a working repo you can clone and run today, not a pitch deck. The most useful
+        thing anyone can do with it right now:
+      </p>
+      <ol style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 1.7; color: #B8B4AC;">
+        <li>Clone <a href="https://github.com/nhartman000/nych">nych</a>, <a href="https://github.com/nhartman000/mg8">mg8</a>, and <a href="https://github.com/nhartman000/T.O.T.E-loops">T.O.T.E-loops</a>.</li>
+        <li>Run the test suite. CI is green on <code style="font-family: 'JetBrains Mono', monospace; color: #C9935A;">nych</code> today — check it stays that way before and after your change.</li>
+        <li>Run the encoder on your own text and see what actually symbolizes versus falls back to a skeleton.</li>
+        <li>If you think the compression changes an LLM's answer quality — better, worse, or not at all — measure it and publish the result. That comparison hasn't been run by anyone yet.</li>
+        <li>Open a small, tested PR. Not a rewrite.</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- FUNDING -->
+  <div style="display: flex; justify-content: center; padding: 56px 32px; border-top: 1px solid rgba(237,234,227,0.1);">
+    <div style="max-width: 720px; width: 100%; display: flex; flex-direction: column; gap: 18px;">
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: #8A8680; text-transform: uppercase;">05 — support</div>
+      <h2 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 500; font-size: 28px; color: #EDEAE3;">Built by one person, around a day job</h2>
+      <p style="margin: 0; font-size: 16px; line-height: 1.75; color: #B8B4AC;">
+        NYCH and MG8 are developed alongside paying work, not instead of it. If this is useful to you,
+        sponsorship is what turns nights-and-weekends progress into something faster.
+      </p>
+      <div>
+        <a href="https://github.com/sponsors/nhartman000" style="font-family: 'JetBrains Mono', monospace; font-size: 15px;">github.com/sponsors/nhartman000</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="display: flex; justify-content: center; padding: 40px 32px 72px; border-top: 1px solid rgba(237,234,227,0.1);">
+    <div style="max-width: 720px; width: 100%; display: flex; flex-wrap: wrap; gap: 24px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #8A8680;">
+      <a href="https://americanmilestone.com">americanmilestone.com</a>
+      <a href="https://github.com/nhartman000/nych">github.com/nhartman000/nych</a>
+      <a href="https://github.com/nhartman000/mg8">github.com/nhartman000/mg8</a>
+      <a href="https://github.com/nhartman000/T.O.T.E-loops">github.com/nhartman000/T.O.T.E-loops</a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  const WORDS = [
+    { word: "Hammer",     glyph: "🔨", skeleton: "hmr",   hasGlyph: true,
+      info: "Matches a fixed anchor in NYCH's v1.0.0 symbol table. “hmr” is the mechanical consonant skeleton (vowels and doubled letters dropped) carried alongside it for disambiguation." },
+    { word: "the",        glyph: "·",  skeleton: "th",    hasGlyph: false,
+      info: "No glyph yet — common function words aren't in the (intentionally small) v1.0.0 table. Falls back to the skeleton alone, so nothing is lost, just not compressed as far." },
+    { word: "nail",       glyph: "📌", skeleton: "nl",    hasGlyph: true,
+      info: "Matches a fixed anchor in the same table. “nl” is its skeleton." },
+    { word: "into",       glyph: "·",  skeleton: "nt",    hasGlyph: false,
+      info: "No glyph yet, same as other function words. Skeleton-only fallback: “nt”." },
+    { word: "wood",       glyph: "·",  skeleton: "wd",    hasGlyph: false,
+      info: "Not yet in the table — a plain material noun the table doesn't cover today. This is exactly the kind of gap outside contributors could close." },
+    { word: "foundation", glyph: "🏗️", skeleton: "fndtn", hasGlyph: true,
+      info: "Matches a fixed anchor. Longer word, same mechanical rule: “fndtn”." },
+  ];
+
+  const FILE_FAMILY = [
+    { ext: ".mg8",   role: "Macro-gate Structured Ordered Notation schema — the bounded execution unit/container a single run executes inside, with its own inputs, bounds, and exit conditions.", status: "this repo" },
+    { ext: ".mg8pk", role: "Package container — bundles one or more .mg8 units for a composed, multi-unit run.", status: "interim spec, no standalone repo yet" },
+    { ext: ".ork",   role: "Orchestration header — position marker plus nested loop-control stack only (step, iteration, bound, exit predicate); fails closed to UNRESOLVED rather than looping silently.", status: "interim reference profile, v0.3" },
+    { ext: ".bonit", role: "Domain ruleset — the authority/workflow/validation content a given .ork instance adopts by reference, so the invariant .ork header stays reusable across unrelated pipelines.", status: "new, defined alongside .ork v0.3" },
+    { ext: ".gst",   role: "Gestalt file — where NYCH's actual emoji/symbols live, along with the global invariants that make up the gestalt proper; carries that state and context between steps.", status: "nhartman000/gst" },
+    { ext: ".g8son", role: "Gated Structured Ordered Notation schema — 1–3 bounded conditional gates/operators evaluated at a step.", status: "nhartman000/g8son" },
+    { ext: ".qson",  role: "Queriable Structured Ordered Notation schema — the immutable, auditable, queryable record of what actually executed.", status: "nhartman000/qson-" },
+  ];
+
+  function esc(s) {
+    return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+
+  function selectWord(word) {
+    const w = WORDS.find((x) => x.word === word) || WORDS[0];
+    document.getElementById("ak-selected-word").textContent = w.word;
+    document.getElementById("ak-selected-info").textContent = w.info;
+  }
+
+  function renderMarquee() {
+    const track = document.getElementById("ak-marquee-track");
+    const doubled = WORDS.concat(WORDS);
+    track.innerHTML = doubled.map((item) => {
+      const bg = item.hasGlyph ? "rgba(201,147,90,0.08)" : "rgba(237,234,227,0.03)";
+      return (
+        '<button class="ak-word-btn" data-word="' + esc(item.word) + '" style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 22px; margin-right: 4px; border-radius: 10px; background: ' + bg + ';">' +
+          '<div style="font-size: 30px; line-height: 1; min-height: 34px; display: flex; align-items: center;">' + esc(item.glyph) + '</div>' +
+          '<div style="font-size: 13px; color: #C7C3BB;">' + esc(item.word) + '</div>' +
+          '<div style="font-family: \'JetBrains Mono\', monospace; font-size: 13px; color: #C9935A;">' + esc(item.skeleton) + '</div>' +
+        '</button>'
+      );
+    }).join("");
+    track.querySelectorAll("button[data-word]").forEach((btn) => {
+      btn.addEventListener("click", () => selectWord(btn.getAttribute("data-word")));
+    });
+  }
+
+  function renderFileFamily() {
+    const el = document.getElementById("ak-file-family");
+    el.innerHTML = FILE_FAMILY.map((row) => (
+      '<div style="display: flex; flex-wrap: wrap; gap: 16px; padding: 16px 20px; background: rgba(237,234,227,0.02);">' +
+        '<div style="font-family: \'JetBrains Mono\', monospace; font-size: 14px; color: #C9935A; width: 90px; flex-shrink: 0;">' + esc(row.ext) + '</div>' +
+        '<div style="flex: 2 1 220px; font-size: 14px; color: #EDEAE3;">' + esc(row.role) + '</div>' +
+        '<div style="flex: 1 1 160px; font-size: 13px; color: #85817A;">' + esc(row.status) + '</div>' +
+      '</div>'
+    )).join("");
+  }
+
+  renderMarquee();
+  renderFileFamily();
+  selectWord("Hammer");
+})();
+</script>
+
+</body>
+</html>
